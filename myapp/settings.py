@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-7_zm_h$h4$mpq+)j&(u-d!o#f&asrdy-x^eip5i8ibv1s3vt-k'
 
+DEBUG = False
 
-DEBUG = True
+ALLOWED_HOSTS = ['yourdomain.com', 'your-render-subdomain.onrender.com', '127.0.0.1']
 
-ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = ['https://yourdomain.com', 'https://your-render-subdomain.onrender.com']
 
 
 # Application definition
@@ -72,8 +73,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'myapp.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
