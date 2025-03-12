@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333;
+}
+
+/* Page header */
+.employee-info-container {
+    width: 100%;
+    background-color: #6a1b9a; /* Purple background */
+    color: #fff;
+    padding: 0.05px;
+    text-align: center;
+    
+}
+
+.header-title {
+    display: flex;
+    font-size: 30px;
+    padding-top: 5px;
+    margin-top: 10px;
+    padding-left: 2%;
+    position: relative;
+    
+}
+.logout-button {
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    padding: 6px 14px;
+    font-size: 14px;
+    background-color: #fff; /* White background for contrast */
+    color: #6a1b9a; /* Purple text */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.logout-button:hover {
+    background-color: #8e44ad; /* Lighter purple on hover */
+    color: #fff;
+}
+
+/* .sub-title {
+    display: flex;
+    font-size: 20px;
+    margin-top: 0%;
+    padding-left: 2%;
+    position: relative;
+} */
+
+/* Filter/search section */
+.filter-container {
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    justify-content: space-between; /* Spaces out elements */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.search-box {
+    flex: 0; /* Makes it larger compared to the selector */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center; /* Center text inside the search box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-box ::placeholder{
+
+    text-align: center;
+}
+
+/* Dropdown selector */
+.id-card-type {
+    flex: 1; /* Allows it to adjust size */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds space between label and dropdown */
+    font-size: 15px;
+    
+}
+
+.id-card-type select {
+    display: flex;
+    padding: 0px;
+    font-size: 15px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* Buttons */
+.action-buttons {
+    flex: 1; /* Align it to the right */
+    display: flex;
+    justify-content: flex-end; /* Moves the button to the right */
+}
+
+.generate-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+    background-color: #5e2d8a; /* Lighter purple on hover */
+}
+
+/* Table styling */
+.employee-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.employee-table th {
+    background-color: #6a1b9a;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.employee-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.employee-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    transform: scale(1.2); /* Make the checkboxes slightly larger */
+    cursor: pointer;
+}
+/* In employee.css */
+.user-info {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.user-info strong {
+    color: #6a11cb; /* Optional: style the email to stand out */
+}
