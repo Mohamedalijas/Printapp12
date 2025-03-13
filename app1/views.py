@@ -190,7 +190,7 @@ from django.conf import settings
 
 # Paths
 DESKTOP_PATH = os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'generated_id_cards')
-FONT_PATH = os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'arial.ttf')
+FONT_PATH = os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'fonts', 'arial.ttf')
 TEMPLATE_PATHS = {
     'type1': os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'templates', 'Bahrain Steel Card.PNG'),
     'type2': os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'templates', 'Contractors Card BS.PNG'),
