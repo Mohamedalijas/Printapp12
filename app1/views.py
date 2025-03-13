@@ -192,10 +192,10 @@ from django.conf import settings
 DESKTOP_PATH = os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'generated_id_cards')
 FONT_PATH = os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'arial.ttf')
 TEMPLATE_PATHS = {
-    'type1': os.path.join(settings.STATIC_ROOT, 'app1', 'templates', 'Bahrain Steel Card.PNG'),
-    'type2': os.path.join(settings.STATIC_ROOT, 'app1', 'templates', 'Contractors Card BS.PNG'),
-    'type3': os.path.join(settings.STATIC_ROOT, 'app1', 'templates', 'Foulath Infotech Card.PNG'),
-    'type4': os.path.join(settings.STATIC_ROOT, 'app1', 'templates', 'SULB Card.PNG'),
+    'type1': os.path.join(settings.STATIC_ROOT, 'app1', 'id cards', 'Bahrain Steel Card.PNG'),
+    'type2': os.path.join(settings.STATIC_ROOT, 'app1', 'id cards', 'Contractors Card BS.PNG'),
+    'type3': os.path.join(settings.STATIC_ROOT, 'app1', 'id cards', 'Foulath Infotech Card.PNG'),
+    'type4': os.path.join(settings.STATIC_ROOT, 'app1', 'id cards', 'SULB Card.PNG'),
 }
 
 def fetch_employee_data(employee_id):
