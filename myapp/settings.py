@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-7_zm_h$h4$mpq+)j&(u-d!o#f&asrdy-x^eip5i8ibv1s3vt-k
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['yourdomain.com', 'your-render-subdomain.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['printapp12-2.onrender.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://yourdomain.com', 'https://your-render-subdomain.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://printapp12-2.onrender.com']
 
 
 # Application definition
