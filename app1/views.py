@@ -192,10 +192,10 @@ from django.conf import settings
 DESKTOP_PATH = os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'generated_id_cards')
 FONT_PATH = os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'arial.ttf')
 TEMPLATE_PATHS = {
-    'type1': os.path.join(settings.STATIC_ROOT, 'app1', 'id cards', 'Bahrain Steel Card.PNG'),
-    'type2': os.path.join(settings.STATIC_ROOT, 'app1', 'id cards', 'Contractors Card BS.PNG'),
-    'type3': os.path.join(settings.STATIC_ROOT, 'app1', 'id cards', 'Foulath Infotech Card.PNG'),
-    'type4': os.path.join(settings.STATIC_ROOT, 'app1', 'id cards', 'SULB Card.PNG'),
+    'type1': os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'templates', 'Bahrain Steel Card.PNG'),
+    'type2': os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'templates', 'Contractors Card BS.PNG'),
+    'type3': os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'templates', 'Foulath Infotech Card.PNG'),
+    'type4': os.path.join(settings.BASE_DIR, 'app1', 'static', 'app1', 'templates', 'SULB Card.PNG'),
 }
 
 def fetch_employee_data(employee_id):
@@ -226,8 +226,9 @@ def generate_selected_id_cards(request):
             if not employee_ids:
                 return JsonResponse({'message': 'No employees selected.'}, status=400)
 
-            if not os.path.exists(DESKTOP_PATH):
-                os.makedirs(DESKTOP_PATH)
+            if not os.path.exists(TEMPLATE_PATHS[card_type]):
+                return JsonResponse({'message': f"Template {card_type} not found at {TEMPLATE_PATHS[card_type]}"}, status=400)
+
 
             generated_files = []
 
