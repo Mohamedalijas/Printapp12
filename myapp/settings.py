@@ -11,6 +11,7 @@ SECRET_KEY = 'django-insecure-7_zm_h$h4$mpq+)j&(u-d!o#f&asrdy-x^eip5i8ibv1s3vt-k
 
 DEBUG = False
 
+
 ALLOWED_HOSTS = ['printapp12-2.onrender.com']
 
 CSRF_TRUSTED_ORIGINS = ['https://printapp12-2.onrender.com']
