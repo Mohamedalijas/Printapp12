@@ -112,12 +112,12 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-TEMPLATE_PATHS = {
-    'type1': os.path.abspath('app1/Bahrain Steel Card.PNG'),
-    'type2': os.path.abspath('app1/Contractors Card BS.PNG'),
-    'type3': os.path.abspath('app1/Foulath Infotech Card.PNG'),
-    'type4': os.path.abspath('app1/SULB Card.PNG'),
-}
+# TEMPLATE_PATHS = {
+#     'type1': os.path.abspath('templates/app1/images/Bahrain Steel Card.PNG'),
+#     'type2': os.path.abspath('app1/Contractors Card BS.PNG'),
+#     'type3': os.path.abspath('app1/Foulath Infotech Card.PNG'),
+#     'type4': os.path.abspath('app1/SULB Card.PNG'),
+# }
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
